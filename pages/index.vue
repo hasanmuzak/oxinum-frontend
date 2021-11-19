@@ -1,77 +1,155 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <v-card class="logo py-4 d-flex justify-center">
-        <NuxtLogo />
-        <VuetifyLogo />
-      </v-card>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
+  <div>
+    <div class="tw-flex tw-items-center tw-justify-between">
+      <div class="tw-flex tw-items-center">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19.77 11.25H15.73C13.72 11.25 12.75 10.36 12.75 8.52V3.98C12.75 2.14 13.73 1.25 15.73 1.25H19.77C21.78 1.25 22.75 2.14 22.75 3.98V8.51C22.75 10.36 21.77 11.25 19.77 11.25ZM15.73 2.75C14.39 2.75 14.25 3.13 14.25 3.98V8.51C14.25 9.37 14.39 9.74 15.73 9.74H19.77C21.11 9.74 21.25 9.36 21.25 8.51V3.98C21.25 3.12 21.11 2.75 19.77 2.75H15.73Z" fill="#2D2D24"/>
+          <path d="M19.77 22.75H15.73C13.72 22.75 12.75 21.77 12.75 19.77V15.73C12.75 13.72 13.73 12.75 15.73 12.75H19.77C21.78 12.75 22.75 13.73 22.75 15.73V19.77C22.75 21.77 21.77 22.75 19.77 22.75ZM15.73 14.25C14.55 14.25 14.25 14.55 14.25 15.73V19.77C14.25 20.95 14.55 21.25 15.73 21.25H19.77C20.95 21.25 21.25 20.95 21.25 19.77V15.73C21.25 14.55 20.95 14.25 19.77 14.25H15.73Z" fill="#2D2D24"/>
+          <path d="M8.27 11.25H4.23C2.22 11.25 1.25 10.36 1.25 8.52V3.98C1.25 2.14 2.23 1.25 4.23 1.25H8.27C10.28 1.25 11.25 2.14 11.25 3.98V8.51C11.25 10.36 10.27 11.25 8.27 11.25ZM4.23 2.75C2.89 2.75 2.75 3.13 2.75 3.98V8.51C2.75 9.37 2.89 9.74 4.23 9.74H8.27C9.61 9.74 9.75 9.36 9.75 8.51V3.98C9.75 3.12 9.61 2.75 8.27 2.75H4.23Z" fill="#2D2D24"/>
+          <path d="M8.27 22.75H4.23C2.22 22.75 1.25 21.77 1.25 19.77V15.73C1.25 13.72 2.23 12.75 4.23 12.75H8.27C10.28 12.75 11.25 13.73 11.25 15.73V19.77C11.25 21.77 10.27 22.75 8.27 22.75ZM4.23 14.25C3.05 14.25 2.75 14.55 2.75 15.73V19.77C2.75 20.95 3.05 21.25 4.23 21.25H8.27C9.45 21.25 9.75 20.95 9.75 19.77V15.73C9.75 14.55 9.45 14.25 8.27 14.25H4.23Z" fill="#2D2D24"/>
+        </svg>
+
+        <h1 class="header-title tw-pl-2">
+          Dashboard
+        </h1>
+      </div>
+      <div class="tw-flex tw-items-center text--darken-1 grey--text tw-transition tw-duration-200">
+        <span class="tw-pr-1">
+           <svg height="22" viewBox="0 0 21 21" width="22" xmlns="http://www.w3.org/2000/svg"><g fill="none"
+                                                                                                 fill-rule="evenodd"
+                                                                                                 stroke="currentColor"
+                                                                                                 stroke-linecap="round"
+                                                                                                 stroke-linejoin="round"
+                                                                                                 transform="translate(4 2)"><path
+             d="m4.5 1.5h-2.00245461c-1.1045695 0-2 .8954305-2 2v10c0 1.1045695.8954305 2 2 2h8.00000001c1.1043778-.000491 1.9997288-.8956223 2.0004909-2l.0019637-8-4-4"/><path
+             d="m9.5 8.586-3 2.914-3-2.914"/><path d="m6.5.5v11"/></g></svg>
+        </span>
+
+        <span>
+        CSV Olarak İndir
+      </span>
+      </div>
+    </div>
+
+    <DashboardStatus/>
+    <div class="tw-flex tw-items-center tw-pt-5">
+      <span>
+      <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path
+  d="M14.8902 18.22H6.10019C5.58019 18.22 5.09018 18.17 4.65018 18.07C4.42018 18.04 4.14019 17.96 3.85019 17.85C2.52019 17.35 0.950195 16.12 0.950195 13.06V7.90997C0.950195 4.63997 2.83019 2.76001 6.10019 2.76001H14.8902C17.6502 2.76001 19.4302 4.07998 19.9102 6.47998C20.0002 6.91998 20.0402 7.38997 20.0402 7.90997V13.06C20.0402 16.35 18.1702 18.22 14.8902 18.22ZM6.11017 4.28003C3.65017 4.28003 2.46017 5.46999 2.46017 7.92999V13.08C2.46017 14.87 3.09019 15.97 4.38019 16.46C4.58019 16.53 4.7702 16.58 4.9502 16.61C5.3302 16.69 5.70017 16.73 6.11017 16.73H14.9002C17.3602 16.73 18.5502 15.54 18.5502 13.08V7.92999C18.5502 7.50999 18.5202 7.13999 18.4502 6.79999C18.1102 5.09999 16.9502 4.28003 14.9002 4.28003H6.11017Z"
+  fill="#2D2D24"/>
+<path
+  d="M17.8901 21.22H9.10009C8.25009 21.22 7.49008 21.1 6.84008 20.85C5.37008 20.3 4.41007 19.14 4.08007 17.48C4.03007 17.23 4.11009 16.97 4.29009 16.8C4.47009 16.62 4.7301 16.55 4.9801 16.61C5.3101 16.68 5.68009 16.72 6.10009 16.72H14.8901C17.3501 16.72 18.5401 15.53 18.5401 13.07V7.91997C18.5401 7.49997 18.5101 7.12996 18.4401 6.78996C18.3901 6.53996 18.4701 6.28997 18.6401 6.10997C18.8201 5.92997 19.0701 5.84996 19.3201 5.90996C21.7201 6.39996 23.0401 8.17997 23.0401 10.92V16.07C23.0401 19.35 21.1701 21.22 17.8901 21.22ZM5.9201 18.22C6.2401 18.8 6.72009 19.21 7.38009 19.45C7.86009 19.63 8.44007 19.72 9.11007 19.72H17.9001C20.3601 19.72 21.5501 18.53 21.5501 16.07V10.92C21.5501 9.33997 21.0601 8.28997 20.0501 7.73997C20.0501 7.79997 20.0501 7.85997 20.0501 7.91997V13.07C20.0501 16.34 18.1701 18.22 14.9001 18.22H6.11007C6.04007 18.22 5.9801 18.22 5.9201 18.22Z"
+  fill="#2D2D24"/>
+<path
+  d="M10.4999 13.89C8.62988 13.89 7.10986 12.37 7.10986 10.5C7.10986 8.63 8.62988 7.10999 10.4999 7.10999C12.3699 7.10999 13.8899 8.63 13.8899 10.5C13.8899 12.37 12.3699 13.89 10.4999 13.89ZM10.4999 8.60999C9.45988 8.60999 8.60986 9.46 8.60986 10.5C8.60986 11.54 9.45988 12.39 10.4999 12.39C11.5399 12.39 12.3899 11.54 12.3899 10.5C12.3899 9.46 11.5399 8.60999 10.4999 8.60999Z"
+  fill="#2D2D24"/>
+<path
+  d="M4.78027 13.4501C4.37027 13.4501 4.03027 13.1101 4.03027 12.7001V8.30005C4.03027 7.89005 4.37027 7.55005 4.78027 7.55005C5.19027 7.55005 5.53027 7.89005 5.53027 8.30005V12.7001C5.53027 13.1101 5.20027 13.4501 4.78027 13.4501Z"
+  fill="#2D2D24"/>
+<path
+  d="M16.21 13.4501C15.8 13.4501 15.46 13.1101 15.46 12.7001V8.30005C15.46 7.89005 15.8 7.55005 16.21 7.55005C16.62 7.55005 16.96 7.89005 16.96 8.30005V12.7001C16.96 13.1101 16.63 13.4501 16.21 13.4501Z"
+  fill="#2D2D24"/>
+</svg>
+    </span>
+      <h1 class="header-title tw-pl-2">Market</h1>
+    </div>
+    <TopCoinStatus/>
+
+    <div class="tw-flex tw-gap-5 tw-pt-6 tw-flex-col lg:tw-flex-row">
+      <div class="lg:tw-w-7/12">
+        <div class="tw-flex tw-items-center tw-justify-between tw-mb-4">
+          <div class="tw-flex tw-items-center">
+            <span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.87988 18.9001C6.46988 18.9001 6.12988 18.5601 6.12988 18.1501V16.0801C6.12988 15.6701 6.46988 15.3301 6.87988 15.3301C7.28988 15.3301 7.62988 15.6701 7.62988 16.0801V18.1501C7.62988 18.5701 7.28988 18.9001 6.87988 18.9001Z" fill="#2D2D24"/>
+<path d="M12 18.9C11.59 18.9 11.25 18.56 11.25 18.15V14C11.25 13.59 11.59 13.25 12 13.25C12.41 13.25 12.75 13.59 12.75 14V18.15C12.75 18.57 12.41 18.9 12 18.9Z" fill="#2D2D24"/>
+<path d="M17.1201 18.8999C16.7101 18.8999 16.3701 18.5599 16.3701 18.1499V11.9299C16.3701 11.5199 16.7101 11.1799 17.1201 11.1799C17.5301 11.1799 17.8701 11.5199 17.8701 11.9299V18.1499C17.8701 18.5699 17.5401 18.8999 17.1201 18.8999Z" fill="#2D2D24"/>
+<path d="M6.88007 13.1799C6.54007 13.1799 6.24007 12.9499 6.15007 12.6099C6.05007 12.2099 6.29007 11.7999 6.70007 11.6999C10.3801 10.7799 13.6201 8.76992 16.0901 5.89992L16.5501 5.35992C16.8201 5.04992 17.2901 5.00992 17.6101 5.27992C17.9201 5.54992 17.9601 6.01992 17.6901 6.33992L17.2301 6.87992C14.5601 9.99992 11.0401 12.1699 7.06007 13.1599C7.00007 13.1799 6.94007 13.1799 6.88007 13.1799Z" fill="#2D2D24"/>
+<path d="M17.1199 9.5201C16.7099 9.5201 16.3699 9.1801 16.3699 8.7701V6.6001H14.1899C13.7799 6.6001 13.4399 6.2601 13.4399 5.8501C13.4399 5.4401 13.7799 5.1001 14.1899 5.1001H17.1199C17.5299 5.1001 17.8699 5.4401 17.8699 5.8501V8.7801C17.8699 9.1901 17.5399 9.5201 17.1199 9.5201Z" fill="#2D2D24"/>
+<path d="M15 22.75H9C3.57 22.75 1.25 20.43 1.25 15V9C1.25 3.57 3.57 1.25 9 1.25H15C20.43 1.25 22.75 3.57 22.75 9V15C22.75 20.43 20.43 22.75 15 22.75ZM9 2.75C4.39 2.75 2.75 4.39 2.75 9V15C2.75 19.61 4.39 21.25 9 21.25H15C19.61 21.25 21.25 19.61 21.25 15V9C21.25 4.39 19.61 2.75 15 2.75H9Z" fill="#2D2D24"/>
+</svg>
+
+          </span>
+            <h1 class="header-title tw-pl-2">Gelir Grafiği</h1>
+
           </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-col>
-  </v-row>
+          <span
+            class="tw-p-2 tw-rounded-full tw-bg-gray-100 tw-transition tw-duration-200 tw-cursor-pointer hover:tw-bg-gray-300">
+          <svg height="22" viewBox="0 0 21 21" width="22" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"
+                                                                                                fill-rule="evenodd"><circle
+            cx="10.5" cy="10.5" r="1"/><circle cx="5.5" cy="10.5" r="1"/><circle cx="15.5" cy="10.5" r="1"/></g></svg>
+        </span>
+        </div>
+        <div class="income-graph-options tw-flex tw-items-center">
+          <div :class="income_graph_status === 'today' ? 'tw-bg-gray-800 tw-text-gray-50' : ''"
+               class="tw-px-4 tw-py-2 tw-rounded-lg tw-mr-2 tw-bg-gray-100 tw-transition tw-duration-200 hover:tw-bg-gray-800 hover:tw-text-gray-50 tw-cursor-pointer">
+            Bugün
+          </div>
+          <div
+            class="tw-px-4 tw-py-2 tw-rounded-lg tw-mr-2 tw-bg-gray-100 tw-transition tw-duration-200 hover:tw-bg-gray-800 hover:tw-text-gray-50 tw-cursor-pointer">
+            1 Hafta
+          </div>
+          <div
+            class="tw-px-4 tw-py-2 tw-rounded-lg tw-mr-2 tw-bg-gray-100 tw-transition tw-duration-200 hover:tw-bg-gray-800 hover:tw-text-gray-50 tw-cursor-pointer">
+            1 Ay
+          </div>
+          <div
+            class="tw-px-4 tw-py-2 tw-rounded-lg tw-mr-2 tw-bg-gray-100 tw-transition tw-duration-200 hover:tw-bg-gray-800 hover:tw-text-gray-50 tw-cursor-pointer">
+            6 Ay
+          </div>
+          <div
+            class="tw-px-4 tw-py-2 tw-rounded-lg tw-mr-2 tw-bg-gray-100 tw-transition tw-duration-200 hover:tw-bg-gray-800 hover:tw-text-gray-50 tw-cursor-pointer">
+            Tüm Zamanlar
+          </div>
+        </div>
+        <Growth/>
+      </div>
+      <div class="lg:tw-w-5/12">
+        <div class="tw-flex tw-mb-4 tw-items-center tw-justify-between">
+          <div class="tw-flex tw-items-center">
+            <span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.55 22.42C14.22 22.42 13.91 22.2 13.82 21.86C13.71 21.46 13.95 21.05 14.36 20.94C18.42 19.87 21.25 16.19 21.25 11.99C21.25 6.89 17.1 2.74 12 2.74C7.67 2.74 4.83 5.27 3.5 6.8H6.44C6.85 6.8 7.19 7.14 7.19 7.55C7.19 7.96 6.86 8.31 6.44 8.31H2.01C1.96 8.31 1.87 8.3 1.8 8.28C1.71 8.25 1.63 8.21 1.56 8.16C1.47 8.1 1.4 8.02 1.35 7.93C1.3 7.84 1.26 7.73 1.25 7.62C1.25 7.59 1.25 7.57 1.25 7.54V3C1.25 2.59 1.59 2.25 2 2.25C2.41 2.25 2.75 2.59 2.75 3V5.39C4.38 3.64 7.45 1.25 12 1.25C17.93 1.25 22.75 6.07 22.75 12C22.75 16.88 19.46 21.16 14.74 22.4C14.68 22.41 14.61 22.42 14.55 22.42Z" fill="#2D2D24"/>
+<path d="M11.29 22.73C11.27 22.73 11.25 22.72 11.24 22.72C10.16 22.65 9.1 22.41 8.1 22.02C7.81 21.91 7.61 21.62 7.62 21.31C7.62 21.22 7.64 21.13 7.67 21.05C7.82 20.67 8.27 20.48 8.64 20.62C9.51 20.96 10.42 21.16 11.34 21.23C11.73 21.25 12.04 21.59 12.04 21.99L12.03 22.03C12.01 22.42 11.68 22.73 11.29 22.73ZM5.78 20.58C5.61 20.58 5.45 20.52 5.31 20.42C4.47 19.74 3.73 18.95 3.13 18.07C3.04 17.94 2.99 17.8 2.99 17.65C2.99 17.4 3.11 17.17 3.32 17.03C3.65 16.8 4.13 16.89 4.36 17.21C4.36 17.22 4.36 17.22 4.36 17.22C4.37 17.23 4.38 17.25 4.39 17.26C4.91 18.01 5.54 18.68 6.25 19.24C6.42 19.38 6.53 19.59 6.53 19.82C6.53 19.99 6.48 20.16 6.37 20.3C6.22 20.48 6.01 20.58 5.78 20.58ZM2.44 15.7C2.11 15.7 1.82 15.49 1.73 15.18C1.41 14.15 1.25 13.08 1.25 12V11.99C1.26 11.58 1.59 11.25 2 11.25C2.41 11.25 2.75 11.59 2.75 12C2.75 12.94 2.89 13.86 3.16 14.73C3.18 14.81 3.19 14.88 3.19 14.96C3.19 15.28 2.98 15.57 2.66 15.67C2.59 15.69 2.52 15.7 2.44 15.7Z" fill="#2D2D24"/>
+</svg>
+
+          </span>
+            <h1 class="header-title tw-pl-2">İşlemler</h1>
+          </div>
+
+          <span
+            class="tw-p-2 tw-rounded-full tw-bg-gray-100 tw-transition tw-duration-200 tw-cursor-pointer hover:tw-bg-gray-300">
+          <svg height="22" viewBox="0 0 21 21" width="22" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"
+                                                                                                fill-rule="evenodd"><circle
+            cx="10.5" cy="10.5" r="1"/><circle cx="5.5" cy="10.5" r="1"/><circle cx="15.5" cy="10.5" r="1"/></g></svg>
+        </span>
+        </div>
+        <Transaction/>
+      </div>
+    </div>
+  </div>
 </template>
+<script>
+import DashboardStatus from "../components/dashboard/DashboardStatus";
+import TopCoinStatus from "../components/dashboard/TopCoinStatus";
+import Growth from "../components/dashboard/Growth";
+import Transaction from "../components/dashboard/Transaction";
+
+
+import Vue from 'vue';
+
+export default Vue.extend({
+  components: {Transaction, Growth, TopCoinStatus, DashboardStatus},
+  data() {
+    return {
+      income_graph_status: 'today'
+    }
+  }
+})
+</script>
+
+<style lang="scss" scoped>
+.income-graph-options {
+}
+</style>

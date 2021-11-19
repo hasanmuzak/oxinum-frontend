@@ -18,16 +18,19 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet',  href: 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap' },
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~/assets/global.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '@/plugins/apexcharts'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -39,6 +42,7 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    '@nuxtjs/tailwindcss'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -53,8 +57,8 @@ export default {
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
+    treeShake: true,
     theme: {
-      dark: true,
       themes: {
         dark: {
           primary: colors.blue.darken2,
@@ -64,6 +68,10 @@ export default {
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3
+        },
+        light: {
+          'custom-danger': '#E73651',
+          'custom-div-bg': '#f7f7f7',
         }
       }
     }
